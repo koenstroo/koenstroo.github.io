@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+  background-color: #1e293b;
+}
+
+.logo {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #38bdf8;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.main-content p {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+.btn.primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn.primary:hover {
+  background-color: #0ea5e9;
+}
+
+.btn.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn.secondary:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.about-photo-column {
+  flex: 0 0 35%;
+  text-align: center;
+}
+
+.profile-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #1e293b;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-text-column {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text-column h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text-column h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #38bdf8;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.about-text-column .subtitle {
+  color: #94a3b8;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text-column p {
+  color: #f8fafc;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  max-width: none;
+}
+
+.about-text-column .btn {
+  margin: 1.5rem 0 0 0;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  padding: 2rem 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.social-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links a:hover {
+  color: #38bdf8;
+}
+
+.projects-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* Space between each project card */
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f8fafc;
+}
+
+/* The Individual Project Card */
+.project-card {
+  background-color: #1e293b;
+  /* Matches your navbar/footer color */
+  border: 2px solid #334155;
+  /* Subtle border */
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+
+  /* Flexbox magic to separate text and button */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Smooth hover animation setup */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect: lifts the card slightly and turns border blue */
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+/* Left side grouping (Icon, Title, Description) */
+.project-info {
+  flex: 1;
+  /* Takes up all available space to the left of the button */
+  padding-right: 2rem;
+  /* Keeps text from bumping into the button */
+}
+
+.project-info h2 {
+  font-size: 1.5rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  /* Space between the icon and the text */
+}
+
+.project-info h2 i {
+  color: #38bdf8;
+  /* Makes the icons pop with your accent blue */
+}
+
+.project-info p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Main Container - Keeps reading width comfortable */
+.project-detail-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem 1rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+  color: #38bdf8;
+  transform: translateX(-5px);
+}
+
+/* Project Header */
+.project-header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.project-header h1 {
+  font-size: 3rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.project-header h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #38bdf8;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.project-header .subtitle {
+  color: #94a3b8;
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.project-content h2 {
+  font-size: 1.8rem;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #1e293b;
+  padding-bottom: 0.5rem;
+}
+
+.project-content p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.project-links {
+  margin-top: 3rem;
+  text-align: center;
+}
+
