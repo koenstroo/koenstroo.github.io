@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Koen Stroo</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="indexStyle.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Koen Stroo</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contact-container">
+      
+      <div class="contact-header">
+        <h1>Get In Touch</h1>
+        <p class="subtitle">Have a question? Drop a message below!</p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        
+        <input type="hidden" name="access_key" value="e79d9020-f2a1-43e8-8c4e-d44f5d2326ce">
+        
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary submit-btn">Send Message</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/koenstroo" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/koenstroo" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -352,3 +352,95 @@ footer p {
   text-align: center;
 }
 
+.contact-container {
+  max-width: 600px; 
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem 1rem;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #38bdf8;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.contact-header .subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.contact-form {
+  background-color: #1e293b; 
+  border: 2px solid #334155;
+  border-radius: 8px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #0f172a; 
+  border: 2px solid #334155;
+  border-radius: 5px;
+  color: #f8fafc;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.submit-btn {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 1.05rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+
